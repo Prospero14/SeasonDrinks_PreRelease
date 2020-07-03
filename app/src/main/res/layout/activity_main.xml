@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f3"
+    android:backgroundTint="#eff0f3"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switchMain"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/coffeeMain"
+        android:layout_width="0dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchMain"
+        app:srcCompat="@drawable/imagesquare" />
+
+    <ImageButton
+        android:id="@+id/drinksMain"
+        android:layout_width="0dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeMain"
+        app:srcCompat="@drawable/imagetwo" />
+
+    <ImageButton
+        android:id="@+id/placesMain"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksMain"
+        app:srcCompat="@drawable/imagethree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
