@@ -9,11 +9,11 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener,  CompoundButton.OnCheckedChangeListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ImageButton coffeeMainButton;
     ImageButton drinksMainButton;
     ImageButton placesMainButton;
-    Switch mySwitch = null;
+    ImageButton myBestButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,39 +29,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drinksMainButton.setOnClickListener(this);
         placesMainButton = findViewById(R.id.placesMain);
         placesMainButton.setOnClickListener(this);
-        mySwitch = findViewById(R.id.switchMain);
-        mySwitch.setOnCheckedChangeListener(this);
+        myBestButton = findViewById(R.id.imageMyBest);
+        myBestButton.setOnClickListener(this);
+
 
 
     }
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (isChecked) {
-            Intent intent = new Intent(this, OnSwitch.class);
-            startActivity(intent);
 
-        } else {
-            Intent intent = new Intent(this, OffSwitch.class);
-            startActivity(intent);
-        }
-    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.coffeeMain:
-                Intent intent = new Intent(this, CoffeeMain.class);
+                Intent intent = new Intent(this, CoffeeList.class);
                 startActivity(intent);
                 break;
         }
         switch (v.getId()) {
             case R.id.drinksMain:
-                Intent intent = new Intent(this, DrinksMain.class);
+                Intent intent = new Intent(this, DrinksMainList.class);
                 startActivity(intent);
                 break;
         }
         switch (v.getId()) {
             case R.id.placesMain:
                 Intent intent = new Intent(this, Places.class);
+                startActivity(intent);
+                break;
+        }
+        switch (v.getId()) {
+            case R.id.imageMyBest:
+                Intent intent = new Intent(this, MyBest.class);
                 startActivity(intent);
                 break;
         }

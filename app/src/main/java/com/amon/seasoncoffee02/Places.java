@@ -21,7 +21,7 @@ import com.yandex.mapkit.uri.Uri;
 import com.yandex.mapkit.user_location.UserLocationLayer;
 
 //ТУТ раболчая модель с двумя точками и тостами
-public class Places extends AppCompatActivity  implements View.OnClickListener {
+public class Places extends AppCompatActivity {
 
     ImageButton arrowBackButton;
     private MapView mapview;
@@ -36,8 +36,6 @@ public class Places extends AppCompatActivity  implements View.OnClickListener {
         MapKitFactory.initialize(this);
         setContentView(R.layout.places);
 
-        arrowBackButton = findViewById(R.id.arrowBack);
-        arrowBackButton.setOnClickListener(this);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.coffeesplash);
@@ -73,15 +71,6 @@ public class Places extends AppCompatActivity  implements View.OnClickListener {
         mapview.onStart();
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.arrowBack:
-                Intent intent = new Intent(this, ArrowBack.class);
-                startActivity(intent);
-                break;
-        }
-    }
 
     private class MyWebViewClient extends WebViewClient {
         @TargetApi(Build.VERSION_CODES.N)

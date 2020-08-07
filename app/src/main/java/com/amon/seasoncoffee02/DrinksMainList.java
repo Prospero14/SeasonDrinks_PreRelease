@@ -1,16 +1,20 @@
 package com.amon.seasoncoffee02;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-public class CoffeeMain extends AppCompatActivity implements View.OnClickListener {
+//основной список напитков
+public class DrinksMainList extends AppCompatActivity implements View.OnClickListener {
     ImageButton imageCoffeeButton;
     ImageButton imageTeaButton;
+    ImageButton imageLemonadeButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,8 @@ public class CoffeeMain extends AppCompatActivity implements View.OnClickListene
         imageCoffeeButton.setOnClickListener(this);
         imageTeaButton = findViewById(R.id.imageTea);
         imageTeaButton.setOnClickListener(this);
+        imageLemonadeButton = findViewById(R.id.imageLemonade);
+        imageLemonadeButton.setOnClickListener(this);
 
     }
 
@@ -38,7 +44,13 @@ public class CoffeeMain extends AppCompatActivity implements View.OnClickListene
         }
         switch (v.getId()) {
             case R.id.imageTea:
-                Intent intent = new Intent(this, TeaTest.class);
+                Intent intent = new Intent(this, TeaList.class);
+                startActivity(intent);
+                break;
+        }
+        switch (v.getId()) {
+            case R.id.imageLemonade:
+                Intent intent = new Intent(this, LemonadeList.class);
                 startActivity(intent);
                 break;
         }

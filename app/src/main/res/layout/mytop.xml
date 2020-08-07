@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="411dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/topweek" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/top1image"
+                    android:layout_width="173dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/oblkaramel" />
+
+                <TextView
+                    android:id="@+id/top1text"
+                    android:layout_width="161dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:ems="10"
+                    android:inputType="none"
+                    android:text="@string/top1"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/top2image"
+                    android:layout_width="173dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/strawberrybazilik" />
+
+                <TextView
+                    android:id="@+id/top2text"
+                    android:layout_width="157dp"
+                    android:layout_height="139dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:text="@string/top2"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/top3image"
+                    android:layout_width="173dp"
+                    android:layout_height="145dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cherryhibiskus" />
+
+                <TextView
+                    android:id="@+id/top3text"
+                    android:layout_width="158dp"
+                    android:layout_height="131dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:text="@string/top3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/instaButt"
+                    android:layout_width="95dp"
+                    android:layout_height="97dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/instagram" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="245dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="16dp"
+                    android:capitalize="none"
+                    android:fontFamily="@font/comfortaa"
+                    android:gravity="center_horizontal"
+                    android:text="В инстаграмме я выкладываю обзоры, на основе которых и составляется недельный топ" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

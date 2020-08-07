@@ -7,45 +7,45 @@
     android:background="#eff0f3"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageCoffee"
-        android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="152dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMatcha"
-        app:srcCompat="@drawable/daycoffee" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/imageTea"
-        android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="152dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCoffee"
-        app:srcCompat="@drawable/daytea" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <ImageView
-        android:id="@+id/imageMatcha"
-        android:layout_width="403dp"
-        android:layout_height="149dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="152dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dayice" />
+            <ImageButton
+                android:id="@+id/imageCoffee"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/daycoffee" />
+
+            <ImageButton
+                android:id="@+id/imageTea"
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/daytea" />
+
+            <ImageButton
+                android:id="@+id/imageLemonade"
+                android:layout_width="match_parent"
+                android:layout_height="219dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/dayice" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                app:srcCompat="@drawable/coffeesplash" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CoffeeListAdapter extends RecyclerView.Adapter<CoffeeListAdapter.CoffeeListViewHolder> {
-    ArrayList<CoffeeListTest> coffeelist;
+    ArrayList<CoffeeList> coffeelist;
 
-    public CoffeeListAdapter(ArrayList<CoffeeListTest> coffeeslist){
+    public CoffeeListAdapter(ArrayList<CoffeeList> coffeeslist){
         this.coffeelist = coffeeslist;
     }
 
@@ -42,8 +42,8 @@ public class CoffeeListAdapter extends RecyclerView.Adapter<CoffeeListAdapter.Co
         TextView textForCoffeeList;
         public CoffeeListViewHolder (View view){
             super (view);
-            imageForCoffeeList = view.findViewById(R.id.imageForCoffeeList);
-            textForCoffeeList = view.findViewById(R.id.textForCoffeeList);
+            imageForCoffeeList = view.findViewById(R.id.imageForLemonadeList);
+            textForCoffeeList = view.findViewById(R.id.textForLemonadeList);
         }
     }
 }
