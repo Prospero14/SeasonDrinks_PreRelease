@@ -22,22 +22,25 @@ public class CoffeeList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coffeeshop);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.coffeetop);
 
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<CoffeeList> coffeeList = new ArrayList<CoffeeList>();
         coffeeList.add(new CoffeeList(R.drawable.starbuckslogo, "Макиато ванильное облако"));
-        coffeeList.add(new CoffeeList(R.drawable.kofenotlatte, "Макиато карамельное облако"));
-        coffeeList.add(new CoffeeList(R.drawable.cacao, "Случайный текст для тестирования recyclerview #3."));
-        coffeeList.add(new CoffeeList(R.drawable.coffeemaina, "Случайный текст для тестирования recyclerview #4."));
-        coffeeList.add(new CoffeeList(R.drawable.dayice, "Случайный текст для тестирования recyclerview #5."));
-        coffeeList.add(new CoffeeList(R.drawable.excited, "Случайный текст для тестирования recyclerview #6."));
-        coffeeList.add(new CoffeeList(R.drawable.milkshake, "Случайный текст для тестирования recyclerview #7."));
-        coffeeList.add(new CoffeeList(R.drawable.milkshake, "Случайный текст для тестирования recyclerview #8."));
-        coffeeList.add(new CoffeeList(R.drawable.milkshake, "Случайный текст для тестирования recyclerview #9."));
-        coffeeList.add(new CoffeeList(R.drawable.milkshake, "Случайный текст для тестирования recyclerview #10."));
+        coffeeList.add(new CoffeeList(R.drawable.starbuckslogo, "Макиато карамельное облако"));
+        coffeeList.add(new CoffeeList(R.drawable.starbuckslogo, "Колд брю"));
+        coffeeList.add(new CoffeeList(R.drawable.starbuckslogo, "Колд брю латте"));
+        coffeeList.add(new CoffeeList(R.drawable.surfcoffeelogo, "Хэппи - холи - персиковый молочно-кофейный вкус с клубникой и сафлор"));
+        coffeeList.add(new CoffeeList(R.drawable.nordcoffeelogo, "Холодный кофе с комбучей"));
+        coffeeList.add(new CoffeeList(R.drawable.nordcoffeelogo, "Охлажденный кофе со сгущенным кокосовым молоком"));
+        coffeeList.add(new CoffeeList(R.drawable.doubleblogo, "Латте - клубника-базилик опционально со льдом"));
+        coffeeList.add(new CoffeeList(R.drawable.doubleblogo, "Латте груша-тимьян опционально со льдом"));
+        coffeeList.add(new CoffeeList(R.drawable.doubleblogo, "Латте мята-белый шоколад"));
+        coffeeList.add(new CoffeeList(R.drawable.onepricecoffeelogo, "Кафе бамбл (эспрессо, апельсиновый сок, карамельный сироп и лед)"));
+        coffeeList.add(new CoffeeList(R.drawable.onepricecoffeelogo, "Айс-кофе апельсин-можжевельник"));
+        coffeeList.add(new CoffeeList(R.drawable.shocologo, "Тайский кофе - мороженое, молоко, кокосовая паста, сгущенное молоко"));
 
         CoffeeListAdapter coffeeListAdapter = new CoffeeListAdapter(coffeeList);
         recyclerView.setAdapter(coffeeListAdapter);

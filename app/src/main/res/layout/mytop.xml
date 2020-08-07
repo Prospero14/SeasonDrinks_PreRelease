@@ -8,20 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="411dp"
-                android:layout_height="126dp"
-                android:layout_marginTop="8dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/topweek" />
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,6 +37,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="6dp"
                     android:ems="10"
+                    android:fontFamily="@font/comfortaa"
                     android:inputType="none"
                     android:text="@string/top1"
                     android:textAlignment="center" />
@@ -68,6 +64,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginTop="16dp"
                     android:ems="10"
+                    android:fontFamily="@font/comfortaa"
                     android:text="@string/top2"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -93,6 +90,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginTop="16dp"
                     android:ems="10"
+                    android:fontFamily="@font/comfortaa"
                     android:text="@string/top3"
                     android:textAlignment="center" />
             </LinearLayout>

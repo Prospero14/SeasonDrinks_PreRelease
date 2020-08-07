@@ -22,10 +22,10 @@ public class DrinksMainList extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.coffeemain);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.toplogo);
+        getSupportActionBar().setIcon(R.drawable.tealemonadestop);
 
-        imageCoffeeButton = findViewById(R.id.imageCoffee);
-        imageCoffeeButton.setOnClickListener(this);
+       // imageCoffeeButton = findViewById(R.id.imageCoffee);
+       // imageCoffeeButton.setOnClickListener(this);
         imageTeaButton = findViewById(R.id.imageTea);
         imageTeaButton.setOnClickListener(this);
         imageLemonadeButton = findViewById(R.id.imageLemonade);
@@ -36,12 +36,12 @@ public class DrinksMainList extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()) {
+       /* switch (v.getId()) {
             case R.id.imageCoffee:
                 Intent intent = new Intent(this, CoffeeList.class);
                 startActivity(intent);
                 break;
-        }
+        }*/
         switch (v.getId()) {
             case R.id.imageTea:
                 Intent intent = new Intent(this, TeaList.class);

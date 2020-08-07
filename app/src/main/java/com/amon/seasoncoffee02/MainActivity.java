@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.maintop);
 
         coffeeMainButton = findViewById(R.id.coffeeMain);
         coffeeMainButton.setOnClickListener(this);

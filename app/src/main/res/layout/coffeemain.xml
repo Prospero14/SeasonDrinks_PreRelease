@@ -17,14 +17,6 @@
             android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/imageCoffee"
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
-                android:backgroundTint="#00FFFFFF"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/daycoffee" />
-
-            <ImageButton
                 android:id="@+id/imageTea"
                 android:layout_width="match_parent"
                 android:layout_height="216dp"
@@ -40,11 +32,6 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/dayice" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="match_parent"
-                android:layout_height="225dp"
-                app:srcCompat="@drawable/coffeesplash" />
         </LinearLayout>
     </ScrollView>
 

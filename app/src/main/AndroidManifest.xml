@@ -21,7 +21,6 @@
 
         <activity android:name=".DrinksMainList"></activity>
         <activity android:name=".Places"></activity>
-        <activity android:name=".TeaTest"></activity>
         <activity android:name=".CoffeeList"></activity>
         <activity android:name=".TeaList"></activity>
         <activity android:name=".LemonadeList"></activity>

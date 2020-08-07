@@ -23,7 +23,7 @@ public class LemonadeList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lemonadelist);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.lemonadestopmain);
 
         recyclerView = findViewById(R.id.recycler_view_lemonade);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

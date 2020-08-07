@@ -23,22 +23,25 @@ public class TeaList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tealist);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.mainteatop);
 
         recyclerView = findViewById(R.id.recycler_view_tea);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<TeaList> teaLists = new ArrayList<TeaList>();
-        teaLists.add(new TeaList(R.drawable.imagesquare, "Случайный текст для тестирования списка чая #1."));
-        teaLists.add(new TeaList(R.drawable.kofenotlatte, "Случайный текст для тестирования списка чая#2."));
-        teaLists.add(new TeaList(R.drawable.cacao, "Случайный текст для тестирования списка чая #3."));
-        teaLists.add(new TeaList(R.drawable.coffeemaina, "Случайный текст для тестирования списка чая #4."));
-        teaLists.add(new TeaList(R.drawable.dayice, "Случайный текст для тестирования списка чая #5."));
-        teaLists.add(new TeaList(R.drawable.excited, "Случайный текст для тестирования списка чая #6."));
-        teaLists.add(new TeaList(R.drawable.milkshake, "Случайный текст для тестирования списка чая #7."));
-        teaLists.add(new TeaList(R.drawable.milkshake, "Случайный текст для тестирования списка чая #8."));
-        teaLists.add(new TeaList(R.drawable.milkshake, "Случайный текст для тестирования списка чая #9."));
-        teaLists.add(new TeaList(R.drawable.milkshake, "Случайный текст для тестирования списка чая #10."));
+        teaLists.add(new TeaList(R.drawable.surfcoffeelogo, "Матча лас фальяс - зеленый чай, тоник, розмарин и апельсин"));
+        teaLists.add(new TeaList(R.drawable.nordcoffeelogo, "Холодные капитаны - холодные чайные напитки (С чем? - секрет!)"));
+        teaLists.add(new TeaList(R.drawable.nordcoffeelogo, "Холодный жасминовый чай с комбучей"));
+        teaLists.add(new TeaList(R.drawable.doubleblogo, "Чай вишня-гибискус опционально со льдом"));
+        teaLists.add(new TeaList(R.drawable.doubleblogo, "Холодный чай лаванда - базилик"));
+        teaLists.add(new TeaList(R.drawable.onepricecoffeelogo, "Айс матча с грушей"));
+        teaLists.add(new TeaList(R.drawable.cofixlogo, "Капучино мандариновое печенье"));
+        teaLists.add(new TeaList(R.drawable.cofixlogo, "Капучино клубника-банан"));
+        teaLists.add(new TeaList(R.drawable.cofixlogo, "Капучино дыня"));
+        teaLists.add(new TeaList(R.drawable.cofixlogo, "Капучино апельсин"));
+        teaLists.add(new TeaList(R.drawable.shocologo, "Прованс - лаванда, чай анчан, фреш грейпфрута, сахарный сироп, вода с газом, грейпфрут"));
+        teaLists.add(new TeaList(R.drawable.shocologo, "Чай марроканский - Апельсин, лайм, корица, тростниковый сахар и мята"));
+
 
         TeaListAdapter teaListAdapter = new TeaListAdapter(teaLists);
         recyclerView.setAdapter(teaListAdapter);

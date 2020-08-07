@@ -18,7 +18,7 @@ public class MyBest  extends AppCompatActivity  implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mytop);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.toplogotop);
 
         instaButton = findViewById(R.id.instaButt);
         instaButton.setOnClickListener(this);
@@ -28,7 +28,8 @@ public class MyBest  extends AppCompatActivity  implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.instaButt:
-                Uri address = Uri.parse("https://www.instagram.com/seasondrinks_moscow/");
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/seasondrinks_moscow/"));
+                startActivity(intent);
                 break;
         }
 
