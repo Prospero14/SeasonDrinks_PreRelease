@@ -1,19 +1,18 @@
 package com.amon.seasoncoffee02;
 
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 //основной список напитков
 public class DrinksMainList extends AppCompatActivity implements View.OnClickListener {
-    ImageButton imageCoffeeButton;
     ImageButton imageTeaButton;
     ImageButton imageLemonadeButton;
+    ImageButton imageContactButton;
 
 
     @Override
@@ -24,24 +23,25 @@ public class DrinksMainList extends AppCompatActivity implements View.OnClickLis
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.tealemonadestop);
 
-       // imageCoffeeButton = findViewById(R.id.imageCoffee);
-       // imageCoffeeButton.setOnClickListener(this);
+
         imageTeaButton = findViewById(R.id.imageTea);
         imageTeaButton.setOnClickListener(this);
         imageLemonadeButton = findViewById(R.id.imageLemonade);
         imageLemonadeButton.setOnClickListener(this);
+        imageContactButton = findViewById(R.id.imageContact);
+        imageContactButton.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
 
-       /* switch (v.getId()) {
-            case R.id.imageCoffee:
-                Intent intent = new Intent(this, CoffeeList.class);
+        switch (v.getId()) {
+            case R.id.imageContact:
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/seasondrinks_moscow/"));
                 startActivity(intent);
                 break;
-        }*/
+        }
         switch (v.getId()) {
             case R.id.imageTea:
                 Intent intent = new Intent(this, TeaList.class);

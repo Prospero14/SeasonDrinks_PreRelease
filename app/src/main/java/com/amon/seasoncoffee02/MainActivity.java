@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ImageButton coffeeMainButton;
     ImageButton drinksMainButton;
     ImageButton placesMainButton;
     ImageButton myBestButton;
+    ImageButton blogButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         placesMainButton.setOnClickListener(this);
         myBestButton = findViewById(R.id.imageMyBest);
         myBestButton.setOnClickListener(this);
+        blogButton = findViewById(R.id.blogBtn);
+        blogButton.setOnClickListener(this);
 
 
 

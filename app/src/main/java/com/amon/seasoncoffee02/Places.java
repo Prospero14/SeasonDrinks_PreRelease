@@ -38,7 +38,7 @@ public class Places extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.coffeesplash);
+        getSupportActionBar().setIcon(R.drawable.toplogotop);
 
         mapview = (MapView) findViewById(R.id.mapview);
         mapview.getMap().setRotateGesturesEnabled(false);

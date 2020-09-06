@@ -19,7 +19,7 @@
             <ImageButton
                 android:id="@+id/imageTea"
                 android:layout_width="match_parent"
-                android:layout_height="216dp"
+                android:layout_height="250dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/daytea" />
@@ -27,10 +27,17 @@
             <ImageButton
                 android:id="@+id/imageLemonade"
                 android:layout_width="match_parent"
-                android:layout_height="219dp"
+                android:layout_height="250dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/dayice" />
+
+            <ImageButton
+                android:id="@+id/imageContact"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/zaglooshkaa" />
 
         </LinearLayout>
     </ScrollView>

@@ -20,15 +20,15 @@
             <ImageButton
                 android:id="@+id/coffeeMain"
                 android:layout_width="match_parent"
-                android:layout_height="205dp"
+                android:layout_height="250dp"
                 android:backgroundTint="#00FFFFFF"
-                android:scaleType="center"
-                app:srcCompat="@drawable/imagesquare" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/madamecoffee" />
 
             <ImageButton
                 android:id="@+id/drinksMain"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="250dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/madameyouga" />
@@ -36,16 +36,23 @@
             <ImageButton
                 android:id="@+id/placesMain"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:backgroundTint="#00FFFFFF"
-                android:scaleType="center"
-                app:srcCompat="@drawable/imagethree" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/madamemappa" />
 
             <ImageButton
                 android:id="@+id/imageMyBest"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 app:srcCompat="@drawable/imagefour" />
+
+            <ImageButton
+                android:id="@+id/blogBtn"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/madameyouga" />
         </LinearLayout>
     </ScrollView>
 
