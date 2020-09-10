@@ -1,10 +1,13 @@
 package com.amon.seasoncoffee02;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 public class CoffeeListAdapter extends RecyclerView.Adapter<CoffeeListAdapter.CoffeeListViewHolder> {
     ArrayList<CoffeeList> coffeelist;
 
-    public CoffeeListAdapter(ArrayList<CoffeeList> coffeeslist){
+    public CoffeeListAdapter(ArrayList<CoffeeList> coffeeslist) {
         this.coffeelist = coffeeslist;
     }
 
@@ -37,11 +40,12 @@ public class CoffeeListAdapter extends RecyclerView.Adapter<CoffeeListAdapter.Co
         return coffeelist.size();
     }
 
-    public class CoffeeListViewHolder extends RecyclerView.ViewHolder{
+    public class CoffeeListViewHolder extends RecyclerView.ViewHolder {
         ImageView imageForCoffeeList;
         TextView textForCoffeeList;
-        public CoffeeListViewHolder (View view){
-            super (view);
+
+        public CoffeeListViewHolder(View view) {
+            super(view);
             imageForCoffeeList = view.findViewById(R.id.imageForLemonadeList);
             textForCoffeeList = view.findViewById(R.id.textForLemonadeList);
         }
