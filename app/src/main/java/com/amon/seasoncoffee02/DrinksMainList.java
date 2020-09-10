@@ -21,7 +21,7 @@ public class DrinksMainList extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.coffeemain);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.tealemonadestop);
+        getSupportActionBar().setIcon(R.drawable.lemonadestopmain);
 
 
         imageTeaButton = findViewById(R.id.imageTea);

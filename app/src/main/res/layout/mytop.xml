@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eff0f3">
+    android:background="#FFFFFF">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -97,7 +97,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
                 android:orientation="horizontal">
 
                 <ImageButton
